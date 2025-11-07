@@ -1,0 +1,89 @@
+
+📄 Kịch bản: lop-hoc-mau-sac.txt
+🎬 Cảnh 1: CẢNH MỞ ĐẦU: CHIẾC GIỎ BÍ MẬT
+
+[BIND] Sent: Thầy Rùa đặt chiếc giỏ xuống giữa lớp, mỉm cười bí ẩn.
+[P3-simple] Thầy Rùa += act_smile
+
+[BIND] Sent: Ba bạn nhỏ lập tức xúm lại, mắt tròn xoe.
+   • Setting(explicit): Một bãi cỏ xanh mướt, ngập nắng sớm. Những giọt sương còn đọng trên lá.
+   • Characters(4): Gấu Trúc, Thầy Rùa, Thỏ Nơ hồng, Vịt Con
+   • Palette(5): cà chua:do, súp lơ:xanh, cà tím:tim, ớt chuông:vang, cà rốt:cam
+   • Props: cà rốt, cà chua, súp lơ, ớt chuông, cà tím, giỏ, măng
+   • Beats: 5
+🎬 Cảnh 2: Cảnh 2: Khởi Động Cuộc Đua
+   • Setting(explicit): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Props: giỏ, hoa
+   • Beats: 1
+🎬 Cảnh 3: Cảnh 3: Vòng 1 - "Màu Xanh Lá!"
+
+[BIND] Sent:  Hành động (Slow-motion hài hước):
+
+[BIND] Sent:      VÚT! TNH lao đi như một vệt mờ màu hồng, bụi bay mù mịt.
+[P3-simple] Thỏ Nơ hồng += act_dash
+
+[BIND] Sent:      GT lật đật chạy, cái khăn quàng xanh bay phấp phới.
+[P3-simple] Gấu Trúc += act_run
+[WEAR] Gấu Trúc += garment:khăn quàng
+
+[BIND] Sent:      VC từ tốn đi bộ, vừa đi vừa quan sát.
+[P3-simple] Vịt Con += act_walk
+[P3-simple] Vịt Con += act_observe
+[P0] ColorCall@0: xanh_la
+[P0]   → assign dưa chuột := xanh_la (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(2): dưa chuột:xanh_la, súp lơ:xanh
+   • Props: súp lơ, dưa chuột
+   • Beats: 1
+🎬 Cảnh 4: Cảnh 4: Vòng 2 - "Màu Đỏ!"
+[P0] ColorCall@1: do
+[P0]   → assign táo := do (line 3)
+[P0]   → assign củ dền := do (line 3)
+[P0]   → assign cà chua := do (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(3): Thỏ Nơ hồng, Thầy Rùa, Vịt Con
+   • Palette(3): táo:do, củ dền:do, cà chua:do
+   • Props: củ dền, cà chua, táo
+   • Beats: 1
+🎬 Cảnh 5: Cảnh 5: Bài Học Về Củ Cà Rốt
+
+[BIND] Sent:  Hành động (Hình ảnh tưởng tượng kiểu Pixar): Một đoạn phim ngắn 2D hiện lên, mô tả hạt mầm cà rốt nảy mầm.
+
+[BIND] Sent:  TR (Lồng tiếng): "Nó cần thời gian ở dưới mặt đất... Nó cần mưa... cần đất... và cần sự kiên nhẫn để hút dinh dưỡng. Nếu nó mọc quá nhanh, nó sẽ nhạt và đắng. Dinh dưỡng cần thời gian, Thỏ con ạ."
+[P2] Bỏ qua (đã xử lý bởi P2-direct): Lồng tiếng...
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(1): cà rốt:cam
+   • Props: cà rốt, củ dền, giỏ
+   • Beats: 1
+🎬 Cảnh 6: Cảnh 6: Vòng Cuối Cùng - "Màu Vàng!"
+
+[BIND] Sent:      Cô bé chạy đến giỏ... và dừng lại.
+
+[BIND] Sent:      Cô bé nhìn Gấu Trúc (đang chỉ vào quả Chuối) và Vịt Con (đang chỉ vào quả Chanh).
+[P2-direct] Gấu Trúc += act_point
+[P2-direct] Vịt Con += act_point
+[P2] Bỏ qua (đã xử lý bởi P2-direct): đang chỉ vào quả Chu...
+[P2] Bỏ qua (đã xử lý bởi P2-direct): đang chỉ vào quả Cha...
+[P3-simple] Bỏ qua (in-paren): act_point
+[P3-simple] Bỏ qua (in-paren): act_point
+[P0] ColorCall@1: vang
+[P0]   → assign chanh := vang (line 5)
+[P0]   → assign chuối := vang (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(4): chuối:vang, chanh:vang, ớt chuông:vang, cà rốt:?
+   • Props: ớt chuông, chanh, chuối, cà rốt, giỏ
+   • Beats: 1
+🎬 Cảnh 7: Cảnh 7: Kết Phim (Hòa Bình Rau Củ)
+
+[BIND] Sent:  (Cả lớp cùng cười. Phim kết thúc với hình ảnh nắng sớm chiếu vào giỏ rau củ đầy màu sắc).
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(1): ớt chuông:vang
+   • Props: ớt chuông, giỏ, cà chua, súp lơ, hoa
+   • Beats: 1
+🧪 QC log: /home/oai/share/output_lop_v2_13/issues_v2_13.log
+✅ Hoàn tất: 7 cảnh. Xuất tại: /home/oai/share/output_lop_v2_13
