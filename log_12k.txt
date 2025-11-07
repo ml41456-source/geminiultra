@@ -1,0 +1,248 @@
+
+📄 Kịch bản: lop-hoc-mau-sac.txt
+🎬 Cảnh 1: CẢNH MỞ ĐẦU: CHIẾC GIỎ BÍ MẬT
+--- Beat B1 (establish) ---
+
+[BIND] Sent: Thỏ Nơ hồng đang tíu tít chạy vòng quanh, háo hức. Gấu Trúc Khăn quàng xanh đang ngồi ngáp ngắn ngáp dài. Vịt Con Xinh đẹp đang soi mình dưới một vũng nước trong.
+[P3-simple] Thỏ Nơ hồng += act_run
+[P3-simple] Gấu Trúc += act_sit
+[WEAR] Thỏ Nơ hồng += garment:khăn quàng
+[WEAR] Thỏ Nơ hồng += garment:nơ
+[WEAR] Thỏ Nơ hồng += color:hong
+[WEAR] Thỏ Nơ hồng += color:xanh
+
+[BIND] Sent: Thầy Rùa chậm rãi, khoan thai bước tới. Trên lưng thầy (hoặc xách bên cạnh) là một chiếc giỏ lớn, được đậy bằng một tấm khăn lanh màu be.
+[P3-simple] Thầy Rùa += act_walk
+[WEAR] Thầy Rùa += garment:khăn quàng
+
+[BIND] Sent: Thầy Rùa đặt chiếc giỏ xuống giữa lớp, mỉm cười bí ẩn.
+[P3-simple] Thầy Rùa += act_smile
+--- Beat B2 (dialogue) ---
+
+[BIND] Sent: Thầy Rùa: "Chào buổi sáng cả lớp. Hôm nay... thầy có mang đến một kho báu!"
+[P3-simple] Bỏ qua (dòng thoại): Thầy Rùa: "Chào buổi sáng cả lớp. Hôm na...
+--- Beat B3 (action) ---
+
+[BIND] Sent: Ba bạn nhỏ lập tức xúm lại, mắt tròn xoe.
+--- Beat B4 (dialogue) ---
+
+[BIND] Sent: Thỏ Nơ hồng: (Hít hít mũi) "Con đoán! Con đoán! Đó là củ cà rốt KHỔNG LỒ!"
+[P3-simple] Bỏ qua (dòng thoại): Thỏ Nơ hồng: (Hít hít mũi) "Con đoán! Co...
+
+[BIND] Sent: Gấu Trúc: (Gãi bụng) "Con nghĩ là... một búp măng ngọt ạ?"
+[P3-simple] Bỏ qua (dòng thoại): Gấu Trúc: (Gãi bụng) "Con nghĩ là... một...
+
+[BIND] Sent: Vịt Con: (Chỉnh lại nơ) "Một thứ gì đó lấp lánh chăng ạ?"
+[P2] Paren seg: 'Chỉnh lại nơ...' @ 9 -> LeftName: Vịt Con
+[P3-simple] Bỏ qua (dòng thoại): Vịt Con: (Chỉnh lại nơ) "Một thứ gì đó l...
+[WEAR] Vịt Con += garment:nơ
+
+[BIND] Sent: Thầy Rùa: (Cười hiền) "Những thứ đó đều tuyệt vời. Nhưng kho báu hôm nay còn rực rỡ hơn. Nó là thứ các con thấy mỗi ngày... nhưng có thể các con chưa nhìn thấy... SỨC MẠNH CỦA MÀU SẮC!"
+[P3-simple] Bỏ qua (dòng thoại): Thầy Rùa: (Cười hiền) "Những thứ đó đều ...
+--- Beat B5 (climax) ---
+
+[BIND] Sent: Thầy Rùa chậm rãi kéo tấm khăn ra. Một giỏ rau củ quả (cà chua đỏ, súp lơ xanh, cà tím, ớt chuông vàng, cà rốt cam...) rực rỡ dưới ánh nắng. Ba bạn nhỏ đồng thanh "Ồoooooooo!"
+   • Setting(explicit): Một bãi cỏ xanh mướt, ngập nắng sớm. Những giọt sương còn đọng trên lá.
+   • Characters(4): Gấu Trúc, Thầy Rùa, Thỏ Nơ hồng, Vịt Con
+   • Palette(5): cà chua:do, súp lơ:xanh, cà tím:tim, ớt chuông:vang, cà rốt:cam
+   • Props: cà rốt, cà chua, súp lơ, ớt chuông, cà tím, giỏ, búp măng, măng
+   • Beats: 5
+🎬 Cảnh 2: Cảnh 2: Khởi Động Cuộc Đua
+--- Beat B1 (dialogue) ---
+
+[BIND] Sent: Thầy Rùa (TR): (Giọng hào hứng) "Hôm nay, chúng ta sẽ chơi trò 'Nhanh Mắt Tìm Màu'! Thầy sẽ hô một màu. Các con phải chạy đến giỏ, chọn ĐÚNG loại rau củ có màu đó VÀ nói được lợi ích dinh dưỡng của nó."
+[P3-simple] Bỏ qua (dòng thoại): Thầy Rùa (TR): (Giọng hào hứng) "Hôm nay...
+
+[BIND] Sent: TNH: (Giơ tay cao nhất) "Con sẽ thắng! Nhanh là nghề của con!"
+[P2] Paren seg: 'Giơ tay cao nhất...' @ 5 -> LeftName: Thỏ Nơ hồng
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Giơ tay cao nhất) "Con sẽ thắng! N...
+
+[BIND] Sent: TR: (Cười hiền) "Nhưng nhớ nhé Thỏ con... phải CHÍNH XÁC. Ai làm đúng và đủ, sẽ được thưởng một bông Hoa Cúc Ánh Dương!" (Thầy chỉ vào một bông hoa rực rỡ bên cạnh).
+[P2] Paren seg: 'Thầy chỉ vào một bông hoa rự...' @ 121 -> LeftName: Thầy Rùa
+[P2]   Thầy Rùa += act_point
+[P3-simple] Bỏ qua (dòng thoại): TR: (Cười hiền) "Nhưng nhớ nhé Thỏ con.....
+   • Setting(explicit): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(2): Thầy Rùa, Thỏ Nơ hồng
+   • Props: giỏ, hoa
+   • Beats: 1
+🎬 Cảnh 3: Cảnh 3: Vòng 1 - "Màu Xanh Lá!"
+--- Beat B1 (dialogue) ---
+
+[BIND] Sent: TR: "Sẵn sàng... Bắt đầu! MÀU XANH LÁ!"
+[P3-simple] Bỏ qua (dòng thoại): TR: "Sẵn sàng... Bắt đầu! MÀU XANH LÁ!"...
+
+[BIND] Sent: VÚT! TNH lao đi như một vệt mờ màu hồng, bụi bay mù mịt.
+[P3-simple] Thỏ Nơ hồng += act_dash
+
+[BIND] Sent: GT lật đật chạy, cái khăn quàng xanh bay phấp phới.
+[P3-simple] Gấu Trúc += act_run
+[WEAR] Gấu Trúc += garment:khăn quàng
+[WEAR] Gấu Trúc += color:xanh
+
+[BIND] Sent: VC từ tốn đi bộ, vừa đi vừa quan sát.
+[P3-simple] Vịt Con += act_walk
+[P3-simple] Vịt Con += act_observe
+
+[BIND] Sent: TNH: (Vồ ngay lấy quả Dưa Chuột dài) "Xong! Con trước nhất! Màu xanh lá! Giúp chúng ta... ừm... MÁT LẠNH!" (Cô bé nói rất nhanh).
+[P2] Paren seg: 'Vồ ngay lấy quả Dưa Chuột dà...' @ 5 -> LeftName: Thỏ Nơ hồng
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Vồ ngay lấy quả Dưa Chuột dài) "Xo...
+
+[BIND] Sent: TR: (Khoan thai) "Đúng là màu xanh, nhưng..."
+[P3-simple] Bỏ qua (dòng thoại): TR: (Khoan thai) "Đúng là màu xanh, nhưn...
+
+[BIND] Sent: Cùng lúc đó, GT (chậm hơn) đang vật lộn ôm một cây Súp lơ xanh (Bông cải xanh) rất to.
+[P3-simple] Gấu Trúc += act_hug
+
+[BIND] Sent: GT: (Thở hổn hển) "Dạ... con chọn... Súp lơ ạ. Màu xanh lá... giúp con... khỏe mạnh... và xương chắc nịch!"
+[P3-simple] Bỏ qua (dòng thoại): GT: (Thở hổn hển) "Dạ... con chọn... Súp...
+
+[BIND] Sent: TR: "Hoan hô Gấu Trúc! Hoàn toàn chính xác! Xương chắc nịch! Vòng này Gấu Trúc thắng."
+[P3-simple] Bỏ qua (dòng thoại): TR: "Hoan hô Gấu Trúc! Hoàn toàn chính x...
+
+[BIND] Sent: TNH: (Bất ngờ, tai cụp xuống) "Hả? Nhưng con nhanh hơn mà!"
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Bất ngờ, tai cụp xuống) "Hả? Nhưng...
+[P0] ColorCall@0: xanh_la
+[P0]   → assign dưa chuột := xanh_la (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(2): dưa chuột:xanh_la, súp lơ:xanh
+   • Props: súp lơ, dưa chuột
+   • Beats: 1
+🎬 Cảnh 4: Cảnh 4: Vòng 2 - "Màu Đỏ!"
+--- Beat B1 (climax) ---
+
+[BIND] Sent: TNH: (Dậm dậm chân, quyết tâm) "Lần này con sẽ không nhầm nữa!"
+[P2] Paren seg: 'Dậm dậm chân, quyết tâm...' @ 5 -> LeftName: Thỏ Nơ hồng
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Dậm dậm chân, quyết tâm) "Lần này ...
+
+[BIND] Sent: TR: "Tập trung nào... MÀU ĐỎ!"
+[P3-simple] Bỏ qua (dòng thoại): TR: "Tập trung nào... MÀU ĐỎ!"...
+
+[BIND] Sent: VÚT! TNH lại lao đi. Lần này, cô bé thấy hai vật màu đỏ: Quả Táo và Củ Dền. Vì quá vội, cô bé vơ ngay lấy Củ Dền (vì nó to và đỏ đậm hơn).
+[P3-simple] Thỏ Nơ hồng += act_dash
+[P3-simple] Thỏ Nơ hồng += act_snatch
+[WEAR] Thỏ Nơ hồng += color:do
+
+[BIND] Sent: TNH: "ĐÂY! MÀU ĐỎ! Con thắng! Cái này... giúp... ừm... giúp chúng ta... ĐỎ MẶT!" (Cô bé tự tin).
+[P3-simple] Bỏ qua (dòng thoại): TNH: "ĐÂY! MÀU ĐỎ! Con thắng! Cái này......
+
+[BIND] Sent: Ngay sau đó, VC nhẹ nhàng cầm lên một Quả Cà Chua chín mọng.
+[P3-simple] Vịt Con += act_hold
+
+[BIND] Sent: VC: (Giọng nhỏ nhẹ) "Dạ thưa thầy, con chọn Cà Chua. Màu Đỏ ạ. Mẹ con bảo ăn Cà Chua sẽ giúp da dẻ hồng hào và trái tim khỏe mạnh ạ."
+[P3-simple] Bỏ qua (dòng thoại): VC: (Giọng nhỏ nhẹ) "Dạ thưa thầy, con c...
+
+[BIND] Sent: TR: (Gật gù) "Vịt Con rất xuất sắc. Củ Dền cũng màu đỏ, Thỏ con ạ, nhưng nó mọc dưới đất và thường dùng để nấu súp. Quả Cà Chua này mới là thứ chúng ta đang tìm. Con lại vội vàng rồi."
+[P3-simple] Bỏ qua (dòng thoại): TR: (Gật gù) "Vịt Con rất xuất sắc. Củ D...
+
+[BIND] Sent: TNH tức giận, ném Củ Dền xuống đất. "Con không chơi nữa! Trò chơi này không công bằng! Thầy Rùa chậm chạp! Các bạn chậm chạp! Con ghét màu sắc!"
+[P3-simple] Thỏ Nơ hồng += act_throw
+[P0] ColorCall@1: do
+[P0]   → assign táo := do (line 3)
+[P0]   → assign củ dền := do (line 3)
+[P0]   → assign cà chua := do (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(3): Thỏ Nơ hồng, Thầy Rùa, Vịt Con
+   • Palette(3): táo:do, củ dền:do, cà chua:do
+   • Props: củ dền, cà chua, táo
+   • Beats: 1
+🎬 Cảnh 5: Cảnh 5: Bài Học Về Củ Cà Rốt
+--- Beat B1 (dialogue) ---
+
+[BIND] Sent: Thầy Rùa không mắng. Thầy chậm rãi bước đến, nhặt Củ Dền lên, phủi đất.
+[P3-simple] Thầy Rùa += act_walk
+[P3-simple] Thầy Rùa += act_pickup
+
+[BIND] Sent: TR: "Thỏ con à, con là người chạy nhanh nhất mà thầy biết. Đó là một món quà tuyệt vời."
+[P3-simple] Bỏ qua (dòng thoại): TR: "Thỏ con à, con là người chạy nhanh ...
+
+[BIND] Sent: TNH: (Lí nhí) "Nhưng con toàn thua..."
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Lí nhí) "Nhưng con toàn thua..."...
+
+[BIND] Sent: TR: (Cầm một Củ Cà Rốt (Màu Cam) trong giỏ lên) "Con nhìn củ Cà rốt này xem. Nó màu gì?"
+[P2] Paren seg: 'Cầm một Củ Cà Rốt (Màu Cam...' @ 4 -> LeftName: Thầy Rùa
+[P3-simple] Bỏ qua (dòng thoại): TR: (Cầm một Củ Cà Rốt (Màu Cam) trong g...
+
+[BIND] Sent: TNH: "Màu Cam..."
+[P3-simple] Bỏ qua (dòng thoại): TNH: "Màu Cam..."...
+
+[BIND] Sent: TR: "Để có được màu Cam ngọt ngào này, nó có vội vàng được không?"
+[P3-simple] Bỏ qua (dòng thoại): TR: "Để có được màu Cam ngọt ngào này, n...
+
+[BIND] Sent: Một đoạn phim ngắn 2D hiện lên, mô tả hạt mầm cà rốt nảy mầm.
+
+[BIND] Sent: TR (Lồng tiếng): "Nó cần thời gian ở dưới mặt đất... Nó cần mưa... cần đất... và cần sự kiên nhẫn để hút dinh dưỡng. Nếu nó mọc quá nhanh, nó sẽ nhạt và đắng. Dinh dưỡng cần thời gian, Thỏ con ạ."
+
+[BIND] Sent: TR: (Trở về thực tại, nhìn TNH) "Con nhanh như gió, nhưng nếu con không dùng sự nhanh đó để quan sát, con sẽ bỏ lỡ mất vị ngọt của kiến thức."
+[P2] Paren seg: 'Trở về thực tại, nhìn TNH...' @ 4 -> LeftName: Thầy Rùa
+[P3-simple] Bỏ qua (dòng thoại): TR: (Trở về thực tại, nhìn TNH) "Con nha...
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(2): Thầy Rùa, Thỏ Nơ hồng
+   • Palette(1): cà rốt:cam
+   • Props: cà rốt, củ dền, giỏ
+   • Beats: 1
+🎬 Cảnh 6: Cảnh 6: Vòng Cuối Cùng - "Màu Vàng!"
+--- Beat B1 (dialogue) ---
+
+[BIND] Sent: TR: "Một vòng cuối cùng nhé? MÀU VÀNG!"
+[P3-simple] Bỏ qua (dòng thoại): TR: "Một vòng cuối cùng nhé? MÀU VÀNG!"...
+
+[BIND] Sent: Lần này, TNH không lao đi.
+[P3-simple] Thỏ Nơ hồng += act_dash
+
+[BIND] Sent: Cô bé chạy đến giỏ... và dừng lại.
+[P3-simple] Thỏ Nơ hồng += act_run
+
+[BIND] Sent: Cô bé nhìn Gấu Trúc (đang chỉ vào quả Chuối) và Vịt Con (đang chỉ vào quả Chanh).
+[P2-direct] Gấu Trúc += act_point
+[P2-direct] Vịt Con += act_point
+[P2] Paren seg: 'đang chỉ vào quả Chuối...' @ 20 -> LeftName: Gấu Trúc
+[P2] Paren seg: 'đang chỉ vào quả Chanh...' @ 56 -> LeftName: Vịt Con
+[P3-simple] Gấu Trúc += act_look
+[P3-simple] Bỏ qua (in-paren): act_point
+[P3-simple] Bỏ qua (in-paren): act_point
+
+[BIND] Sent: TNH: (Chậm rãi cầm lên một Quả Ớt Chuông Vàng) "Dạ thưa thầy... con chọn Ớt chuông vàng."
+[P2] Paren seg: 'Chậm rãi cầm lên một Quả Ớt ...' @ 5 -> LeftName: Thỏ Nơ hồng
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Chậm rãi cầm lên một Quả Ớt Chuông...
+
+[BIND] Sent: TR: "Lợi ích của nó là gì?"
+[P3-simple] Bỏ qua (dòng thoại): TR: "Lợi ích của nó là gì?"...
+
+[BIND] Sent: TNH: (Nhắm mắt, hít một hơi, suy nghĩ) "Dạ... con nghĩ... nó giúp mắt chúng ta... sáng hơn ạ! (Giống như Cà rốt!)"
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Nhắm mắt, hít một hơi, suy nghĩ) "...
+
+[BIND] Sent: TR: (Cười lớn, vỗ vỗ vào mai) "TUYỆT VỜI! Con không chỉ nhanh, mà con đã quan sát!"
+[P3-simple] Bỏ qua (dòng thoại): TR: (Cười lớn, vỗ vỗ vào mai) "TUYỆT VỜI...
+[P0] ColorCall@1: vang
+[P0]   → assign chanh := vang (line 5)
+[P0]   → assign chuối := vang (line 5)
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(4): Thầy Rùa, Thỏ Nơ hồng, Gấu Trúc, Vịt Con
+   • Palette(4): chuối:vang, chanh:vang, ớt chuông:vang, cà rốt:?
+   • Props: ớt chuông, chanh, chuối, cà rốt, giỏ
+   • Beats: 1
+🎬 Cảnh 7: Cảnh 7: Kết Phim (Hòa Bình Rau Củ)
+--- Beat B1 (dialogue) ---
+
+[BIND] Sent: TNH chạy lại ôm chầm lấy Thầy Rùa.
+[P3-simple] Thỏ Nơ hồng += act_run
+[P3-simple] Thỏ Nơ hồng += act_hug_tight
+[P3-simple] Thỏ Nơ hồng += act_hug
+
+[BIND] Sent: TR: "Hôm nay, không ai là người nhanh nhất, nhưng cả ba con đều là người học giỏi nhất."
+[P3-simple] Bỏ qua (dòng thoại): TR: "Hôm nay, không ai là người nhanh nh...
+
+[BIND] Sent: Thầy Rùa không trao bông hoa cho ai cả, mà dùng nó để... trang trí lên giỏ rau củ. Cả ba bạn nhỏ quây quần bên giỏ, TNH cẩn thận chia cho GT một miếng súp lơ, VC một miếng cà chua, và mình thì dũng cảm... cắn thử một miếng Ớt chuông vàng.
+
+[BIND] Sent: TNH: (Mắt sáng rỡ) "Ồ! Ngọt thật thầy ơi!"
+[P3-simple] Bỏ qua (dòng thoại): TNH: (Mắt sáng rỡ) "Ồ! Ngọt thật thầy ơi...
+
+[BIND] Sent: (Cả lớp cùng cười. Phim kết thúc với hình ảnh nắng sớm chiếu vào giỏ rau củ đầy màu sắc).
+   • Setting(inherited): Giỏ rau củ đã mở, rực rỡ sắc màu.
+   • Characters(2): Thầy Rùa, Thỏ Nơ hồng
+   • Palette(1): ớt chuông:vang
+   • Props: ớt chuông, giỏ, cà chua, súp lơ, hoa
+   • Beats: 1
+🧪 QC log: /home/oai/share/output_lop_v2k/issues_v2_12k.log
+✅ Hoàn tất: 7 cảnh. Xuất tại: /home/oai/share/output_lop_v2k
